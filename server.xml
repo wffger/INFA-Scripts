@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<server>
+    <dn>
+        domain_name
+    </dn>
+    <un>
+        user_name
+    </un>
+    <pd>
+        password
+    </pd>
+    <sdn>
+        security_domain
+    </sdn>
+</server>
