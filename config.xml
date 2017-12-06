@@ -12,4 +12,7 @@
     <sdn>
         security_domain
     </sdn>
+    <rn>
+        repository_name
+    </rn>
 </server>

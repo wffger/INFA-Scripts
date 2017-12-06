@@ -5,7 +5,7 @@
 # 批量添加用户到组
 ############################### 
 
-#读入文件路径，存储内容
+#读入配置文件，源文件
 param($a,$b)
 $data_xml=[xml](Get-Content $a)
 $data_csv=Import-Csv $b
@@ -20,8 +20,6 @@ $un=$data_xml.server.un
 $pd=$data_xml.server.pd
 $sdn=$data_xml.server.sdn
 $cmd="& infacmd isp AddUserToGroup -dn $dn -un $un -pd $pd -sdn $sdn "
-
-infacmd updateGatewayInfo -dn Domain_BIDW -dg biapptst:6005
 
 for ($i=0;$i -le $data_csv.length-1;$i++){
     $existing_user_Name= $data_csv.existing_user_Name[$i]
